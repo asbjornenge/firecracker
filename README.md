@@ -1,5 +1,8 @@
 # firecracker
 
+[![browser support](https://ci.testling.com/asbjornenge/firecracker.png)
+](https://ci.testling.com/asbjornenge/firecracker)
+
 Firecracker is a small wrapper around the [firebase](https://www.firebase.com/) js client.  
 It takes a root and allows you to compose in some nice ways. It will also unpack val & name.
 
