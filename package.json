@@ -1,0 +1,47 @@
+{
+  "name": "firecracker",
+  "version": "0.0.1",
+  "description": "Firecracker is a small firebase API wrapper"
+  "keywords": [
+    "firebase",
+  ],
+  "homepage": "https://github.com/asbjornenge/firecracker",
+  "bugs": "https://github.com/asbjornenge/firecracker/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asbjornenge/firecracker.git"
+  },
+  "author": {
+    "name": "asbjornenge",
+    "email": "asbjorn@hanafjedle.net",
+    "url": "https://github.com/asbjornenge"
+  },
+  "main": "index.js",
+  "testling": {
+    "harness": "mocha-bdd",
+    "files": "test/spec.js",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/23..latest",
+      "firefox/22..latest",
+      "safari/latest",
+      "opera/12..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
+  "scripts": {
+    "test": "mocha --ui bdd"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-browserify": "~0.5.0",
+    "gulp-gzip": "0.0.5",
+    "gulp-rename": "~1.2.0",
+    "gulp-size": "~0.2.0",
+    "gulp-uglify": "~0.2.1",
+    "mocha": "~1.18.2"
+  }
+}
