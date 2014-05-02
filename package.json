@@ -1,7 +1,7 @@
 {
   "name": "firecracker",
   "version": "0.0.1",
-  "description": "Firecracker is a small firebase js client wrapper"
+  "description": "Firecracker is a small firebase js client wrapper",
   "keywords": [
     "firebase"
   ],
