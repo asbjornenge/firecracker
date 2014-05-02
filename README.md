@@ -11,7 +11,8 @@ Firecracker is available on npm.
 	
 ### Use
 
-    firecracker("http://my.firebase.root")
+    var root = new Firebase('http://my.firebase.root')
+    firecracker(root)
         .path('/user/messages')
         .from('-JKUu24YeVsjhkDMfSkR')
         .on('child_added', function(child) {
