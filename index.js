@@ -1,7 +1,7 @@
 function getRootRef(fp) {
     var root = fp.root
     if (fp._path) root = root.child(fp._path)
-    if (fp._take) root = root.limit(fp._take)
+    if (fp._take) root = root.limitToFirst(fp._take)
     if (fp._from) root = (typeof fp._from == 'number') ? root.startAt(fp._from) : root.startAt(null, fp._from)
     return root
 }

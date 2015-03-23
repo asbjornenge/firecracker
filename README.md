@@ -6,13 +6,13 @@
 Firecracker is a small wrapper around the [firebase](https://www.firebase.com/) js client.  
 It takes a root and allows you to compose in some nice ways. It will also unpack val & name.
 
-### Install
+## Install
 
 Firecracker is available on npm.
 
 	npm install firecracker
 	
-### Use
+## Use
 
     var root = new Firebase('http://my.firebase.root')
     firecracker(root)
@@ -27,8 +27,19 @@ Firecracker is available on npm.
         .listen()
 
 	
-### Docs
+## Docs
 
 For full documentation see the [spec](https://github.com/asbjornenge/firecracker/blob/master/test/spec.js).  
+
+## Changelog
+
+### 1.0.0
+
+* Replaced .limit with .limitToFirst since .limit is being deprecated
+* Aligning with semver
+
+### 0.0.1
+
+* Initial release
 
 enjoy.
