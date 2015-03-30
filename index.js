@@ -1,14 +1,14 @@
 function getRootRef(fp) {
     var root = fp.root
     if (fp._path) root = root.child(fp._path)
-    if (fp._take) root = root.limitToFirst(fp._take)
+    if (fp._take) root = root.limitToLast(fp._take)
     if (fp._from) root = (typeof fp._from == 'number') ? root.startAt(fp._from) : root.startAt(null, fp._from)
     return root
 }
 
 function transformSnapshot(snapshot) {
     var s = snapshot.val()
-    s.fid = snapshot.name()
+    s.fid = snapshot.key()
     return s
 }
 
@@ -31,7 +31,7 @@ firecracker.prototype.off     = function(event, fn) {
 }
 firecracker.prototype.push    = function(data, cb)  {
     var ref  = getRootRef(this).push(data)
-    if (typeof cb === 'function') cb(ref.name())
+    if (typeof cb === 'function') cb(ref.key())
     return this
 }
 firecracker.prototype.remove  = function(id, callback) {

@@ -33,6 +33,11 @@ For full documentation see the [spec](https://github.com/asbjornenge/firecracker
 
 ## Changelog
 
+### 1.0.1
+
+* Using .limitToLast to mimic previous .limit behaviour
+* Using .key over .name
+
 ### 1.0.0
 
 * Replaced .limit with .limitToFirst since .limit is being deprecated

@@ -2,8 +2,8 @@ var assert    = require('assert')
 var firecracker = require('../index')
 
 var fakeref  = {
-    name : function() { return 1234 },
-    val  : function() { return {} }
+    key : function() { return 1234 },
+    val : function() { return {} }
 }
 var fakeroot = {
     push    : function()      { return fakeref },
